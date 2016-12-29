@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static include_anything leaflet_tags %}
+
+{% block head %}
+  {{ block.super }}
+  {% leaflet_js %}
+  {% leaflet_css %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/map.css' %}">
+
+{% endblock %}
+
+{% block body %}
+hello world
+{% endblock body %}
+
+
+{% block bottom %}
+	{{ block.super }}
+ 
+{% endblock %}
